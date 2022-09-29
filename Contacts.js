@@ -17,7 +17,7 @@ class Contacts {
         return contact
     }
 
-    updateContactById(id, updateContact) {
+    updateContactsById(id, updateContact) {
         let index = this.contacts.findIndex(contact => contact.id === id)
 
         this.contacts[index].name = updateContact.name || this.contacts[index].name
