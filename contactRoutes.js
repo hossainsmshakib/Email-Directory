@@ -1,13 +1,11 @@
-const router = require('express').Router()
+const router = require("express").Router();
 
-const {
-    getAllContacts
-} = require('./contactController')
+const { getAllContacts, createContact, createContacts } = require("./contactController");
 
-router.get('/', getAllContacts)
-// router.post('/')
+router.get("/", getAllContacts);
+router.post("/", createContacts);
 // router.get('/:id')
 // router.put('/:id')
 // router.delete('/delete')
 
-module.exports = router
+module.exports = router;
