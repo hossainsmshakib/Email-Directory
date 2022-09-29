@@ -1,6 +1,10 @@
 const router = require('express').Router()
 
-// router.get('/')
+const {
+    getAllContacts
+} = require('./contactController')
+
+router.get('/', getAllContacts)
 // router.post('/')
 // router.get('/:id')
 // router.put('/:id')
